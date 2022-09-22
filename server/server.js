@@ -3,6 +3,7 @@ const { default: mongoose } = require("mongoose");
 const app = express();
 const port = 3001;
 const routes = require(`./routes/api`);
+const routes1 = require(`./routes/policyapi`);
 const bodyParser = require(`body-parser`);
 require(`dotenv`).config();
 mongoose.Promise = global.Promise;
@@ -30,6 +31,8 @@ app.get("/", (req, res) => {
 app.use(bodyParser.json());
 
 app.use(`/api`, routes);
+
+app.use(`/policyapi`, routes1);
 
 app.use((err, next) => {
   console.log(err);
