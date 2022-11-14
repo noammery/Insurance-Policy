@@ -1,0 +1,20 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "M&M policy is an insurance website, with multiple types of insurance available.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noammery/Insurance-Policy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noammery/Insurance-Policy/issues"
+  },
+  "homepage": "https://github.com/noammery/Insurance-Policy#readme"
+}

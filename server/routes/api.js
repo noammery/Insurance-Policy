@@ -21,4 +21,12 @@ router.delete(`/users/:id`, (req, res, next) => {
     .catch(next);
 });
 
+router.delete("/example/:id", (req, res, next) => {
+  const id = req.params.id;
+  id &&
+    User.findByIdAndDelete(id)
+      .then((data) => res.json(data))
+      .catch(next);
+});
+
 module.exports = router;
